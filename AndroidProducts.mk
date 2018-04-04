@@ -15,6 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a5lte.mk \
-    $(LOCAL_DIR)/havoc_a5lte.mk \
-    $(LOCAL_DIR)/bootleg_a5lte.mk
+    $(LOCAL_DIR)/lineage_a5lte.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_a5lte-user \
+    lineage_a5lte-userdebug \
+    lineage_a5lte-eng
