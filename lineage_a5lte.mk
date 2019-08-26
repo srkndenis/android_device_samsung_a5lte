@@ -32,7 +32,7 @@ TARGET_VENDOR_DEVICE_NAME := a5ltexx
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=a5lte PRODUCT_NAME=a5ltexx
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SM-A500F,SM-A500H,SM-A500FU,a5lte,a5ltexx,a53g,a53gxx,a5ulte,a5ultexx
+TARGET_OTA_ASSERT_DEVICE := a5ulte,a5ultexx,a5lte,a5ltexx,a53gxx,a53g,a5ltedd,a5ultektt,a5ultelgt,a5lteub,a5ultekx,a5ulteskt,a5ultebmc,a5ultedv,a5ltezt
 
 # Fingerprint
 BUILD_FINGERPRINT := samsung/a5ltexx/a5lte:6.0.1/MMB29M/A500FXXU1CPH2:user/release-keys

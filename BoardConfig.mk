@@ -71,5 +71,10 @@ endif
 #Light
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_a5lte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a5lte
+
 # Inherit from proprietary files
 include vendor/samsung/a5lte/BoardConfigVendor.mk
