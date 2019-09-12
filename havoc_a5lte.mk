@@ -15,8 +15,8 @@
 
 $(call inherit-product, device/samsung/a5lte/full_a5lte.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Havoc  stuff
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit System Prop for a5lte 
 $(call inherit-product, device/samsung/a5lte/system_prop.mk)
@@ -24,7 +24,7 @@ $(call inherit-product, device/samsung/a5lte/system_prop.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := lineage_a5lte
+PRODUCT_NAME := havoc_a5lte
 BOARD_VENDOR := samsung
 PRODUCT_DEVICE := a5lte
 
