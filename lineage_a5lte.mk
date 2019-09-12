@@ -18,6 +18,9 @@ $(call inherit-product, device/samsung/a5lte/full_a5lte.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit System Prop for jalebi 
+$(call inherit-product, device/samsung/a5lte/system_prop.mk)
+
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
