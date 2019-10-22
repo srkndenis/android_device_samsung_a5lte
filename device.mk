@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
     libcamera_shim \
     libmm-qcamera \
     camera.msm8916 \
-	Snap
+    Snap
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -227,11 +227,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.id.ums=300F \
     ro.usb.id.ums_adb=3010 \
     ro.usb.vid=2a96
-# IRQ balance
-ifeq ($(TARGET_BOARD_PLATFORM_VARIANT),msm8939)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-endif
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -338,6 +333,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
+
+# System Properties
+$(call inherit-product, device/samsung/a5lte/system_prop.mk)
 
 # Thermal
 PRODUCT_COPY_FILES += \
